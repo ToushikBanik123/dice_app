@@ -21,6 +21,7 @@ void main() {
 class DicePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var randomNumber = 2;
     return SafeArea(child: Center(
       child: Row(
         children: [
@@ -28,7 +29,7 @@ class DicePage extends StatelessWidget {
             flex: 1,
             child: TextButton(
             onPressed: () { print('hi'); },
-            child: Image.asset('images/dice3.png'),
+            child: Image.asset('images/dice$randomNumber.png'),
           ),
           ),
           Expanded(
@@ -36,7 +37,7 @@ class DicePage extends StatelessWidget {
             child:
             TextButton(
               onPressed: () { print('hi'); },
-              child: Image.asset('images/dice2.png'),
+              child: Image.asset('images/dice$randomNumber.png'),
             ),
           ),
         ],
